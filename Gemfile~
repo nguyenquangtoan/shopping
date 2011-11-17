@@ -1,0 +1,31 @@
+# EXAMPLE Gemfile for a spree application, your Gemfile will be different
+source 'http://rubygems.org'
+
+# Generic gem dependencies first
+gem 'rails', '3.0.9'
+gem 'aws-s3', :require => 'aws/s3'
+gem 'dynamic_form'
+gem 'heroku'
+gem 'memcache-client'
+#gem 'rake', '0.9.2'
+
+# Followed by spree itself first, all spree-specific extensions second
+gem 'spree', '0.60.1'
+#gem 'spree_static_content'
+#gem 'spree_editor', :git => "git://github.com/romul/spree_editor.git"
+#gem 'spree_product_assembly', :git => 'git://github.com/spree/spree-product-assembly.git'
+
+# Dev/Test gems
+group :development, :test do
+ gem 'sqlite3'
+ gem 'webrat'
+ gem 'cucumber-rails'
+ gem 'rspec-rails'
+end
+
+group :production do
+ gem 'mysql2', '<0.3'
+# gem 'rack-ssl', :require => 'rack/ssl'
+end
+
+# EOF
