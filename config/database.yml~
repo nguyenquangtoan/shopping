@@ -16,12 +16,12 @@ test:
   timeout: 5000
 
 production:
-adapter: mysql
-encoding: utf8
-reconnect: false
-database: spree_production
-pool: 5
-username: duyphuc
-password: zxcvbn
-host: localhost
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: spree_production
+  pool: 5
+  username: duyphuc
+  password: zxcvbn
+  host: localhost
 
