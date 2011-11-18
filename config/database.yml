@@ -21,7 +21,7 @@ production:
   reconnect: false
   database: spree_production
   pool: 5
-  username: duyphuc
+  username: root
   password: zxcvbn
   host: localhost
 
